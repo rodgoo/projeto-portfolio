@@ -304,6 +304,10 @@ section#ficha p {
   max-height: 200px;
  }
 
+ #projeto-container details.descricao > summary {
+  cursor: pointer;
+ }
+
  footer {
   background-color: var(--destaque);
   color: var(--texto-inverso);
