@@ -29,6 +29,16 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 line-height: 1.5em;
 background-color: var(--fundo-principal);
 color: var(var(--texto));
+transition: background-color .7s, color .7s ease;
+}
+
+body.escuro {
+  --fundo-principal: #000000;
+  --texto: #ffffff;
+  --texto-inverso: #FFFFFF;
+  --destaque: #e2734e;
+  --destaque-inverso: #ffffff7e;
+  --fundo-card: #333333;
 }
 
 header {
@@ -180,6 +190,14 @@ section#ficha p {
       padding-left: 30px;
       font-weight: bold;
     }
+
+  ul, div, div.projeto, div.item, article, div.curso, section {
+    color: var(--texto);
+  }
+
+  div.projeto, div.curso {
+    background-color: #;
+  }
 
   @media screen and (min-width: 768px) {
     main {
