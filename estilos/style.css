@@ -82,7 +82,7 @@ section#ficha {
   background-color: var(--fundo-card);
   padding: 20px;
   border-radius: 8px;
-  grid-column: 2;
+  grid-column: 3/4;
 }
 
 section#detalhes > #title p > b {
