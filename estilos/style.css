@@ -15,8 +15,8 @@
 }
 
 :root {
-  --fundo-principal: #f5f5f5;
-  --texto: #222222;
+  --fundo-principal: #e0e0e0;
+  --texto: #000000;
   --texto-inverso: #ffffff;
   --destaque: #005ec9;
   --destaque-inverso: #c3e4ff;
@@ -35,20 +35,21 @@ transition: background-color .7s, color .7s ease;
 body.escuro {
   --fundo-principal: #000000;
   --texto: #ffffff;
-  --texto-inverso: #FFFFFF;
+  --texto-inverso: #ffffff;
   --destaque: #e2734e;
-  --destaque-inverso: #ffffff7e;
+  --destaque-inverso: #f7a98f;
   --fundo-card: #333333;
 }
 
 header {
   background-color: var(--destaque);
   color: var(--texto);
-  padding: 10px;
+  padding: 2px;
   display: flex;
   justify-content: center;
   position: sticky;
   top: 0;
+  border-radius: 20px;
 }
 
 nav#menu ul {
@@ -61,8 +62,8 @@ nav#menu a {
   text-decoration: none;
   color: var(--texto-inverso);
   font-weight: 600px;
-  padding: 12px 15px;
-  border-radius: 25px;
+  padding: 10px 15px;
+  border-radius: 20px;
   transition: background-color, .6s;
 }
 
@@ -81,7 +82,7 @@ main {
 section#ficha {
   background-color: var(--fundo-card);
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 20px;
   grid-column: 3/4;
 }
 
@@ -136,7 +137,7 @@ section#ficha p {
     background-color: var(--fundo-card);
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 8px;
+    border-radius: 20px;
   }
 
   article h2 {
@@ -237,7 +238,7 @@ section#ficha p {
 
   #formacao-container .curso {
     background-color: var(--fundo-principal);
-    border-radius: 8px;
+    border-radius: 10px;
     border-left: 5px solid var(--destaque-inverso);
     padding-left: 15px;
     transition: border-width .3s, border-color .3s ;
@@ -289,7 +290,7 @@ section#ficha p {
     gap: 15px;
     background-color: var(--fundo-principal);
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 10px;
     border-left: 5px solid var(--destaque-inverso);
     transition: border-color .3s, border-width .3s;
   }
@@ -304,7 +305,7 @@ section#ficha p {
     aspect-ratio: 16/9;
     object-fit: cover;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 
  #projeto-container .projeto {
@@ -331,6 +332,7 @@ section#ficha p {
   color: var(--texto-inverso);
   text-align: center;
   padding: 10px;
+  border-radius: 10px;
  }
 
  footer > a {
